@@ -114,21 +114,50 @@ public class HolaMundo {
                 <fieldset>
                     <legend>Datos de login</legend>
                 <div><label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email que sueles utilizar">
+                <input id="email" type="email" placeholder="Email que sueles utilizar">
                 </div>
+<!-- El tipo email hace que el teclado se adapte automáticamente a la entrada: saca @. Si el navegador no puede 
+    soportarlo, cambia automáticamente a tipo text -->
 
                 <div><label for="pass word">Email</label>
-                    <input type="password" id="password" placeholder="Email que sueles utilizar">
+                    <input id="password" type="password" placeholder="Email que sueles utilizar">
                 </div>
+<!-- Tipo password hace que el texto se introduzca encubierto con bolitas -->
 
                 <div>
                     <button>Login</button>
                 </div>
             </fieldset>
 
-            <fieldset>Datos principales</fieldset>
+<!-- fieldset mete todo en una caja. div salta a la siguiente linea -->
+    <fieldset>
+        <legend>Datos principales</legend>
+     
+        <div>
+            <label for="Nombre">Nombre</label>
+            <input id="Nombre" type="text" placeholder="Nombre">
+        </div>   
+        <div>
+            <label for="Apellido">Nombre</label>
+            <input type="text" placeholder="Apellido">
+        </div> 
+        <div>
+            <label for="web">Página web</label>
+            <input type="url" placeholder="URL">
+        </div> 
+        <div>
+            <label for="hijos">¿Cuántos hijos tienes?</label>
+            <input id="hijos" type="number" placeholder="Número de hijos">
+        </div> 
+        <div>
+            <label for="fecha de nacimiento">Fecha de nacimiento</label>
+            <input id="fecha de nacimiento" type="date" placeholder="Fecha de nacimiento">
+        </div>
+        
+             <button>Confirmar</button>
+    </fieldset>
+    </form>
 
-            <input type="text">
             </form>
         </section>
 
