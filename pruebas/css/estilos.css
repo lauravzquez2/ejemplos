@@ -6,7 +6,10 @@
     --color-fondo-alternativo:rgb(221, 210, 234);
     --color-fondo-alternativo2:rgb(231, 223, 240);
     --margen:0.5rem;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -107,4 +110,9 @@ caption {
 }
 tr:nth-child(even) {
     background-color: var(--color-fondo-alternativo2);
+}
+#Multimedia *:not(h3) {
+    width: 100%;
+    margin: 0;
+
 }
