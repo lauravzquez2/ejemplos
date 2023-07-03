@@ -1,0 +1,153 @@
+/* <link rel="stylesheet" href="css/estilos.css"> necesario añadir este comando en el html para que funcione */
+/* con :root se crean variables válidas para todo el css */
+:root {
+    --color-tinta: rgb(0, 0, 0);
+    --color-fondo: rgb(255, 255, 255);
+    --color-fondo-alternativo:rgb(221, 210, 234);
+    --color-fondo-alternativo2:rgb(231, 223, 240);
+    --color-enlace: rgb(222, 222, 222);
+    --margen:0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: var(--color-fondo);
+}
+a {
+    text-decoration: none;
+    color: var(--color-enlace);
+    font-weight: 100;
+    font-size: small;
+}
+.enlace {
+}
+nav {
+    color: white;
+    background-color: var(--color-tinta);
+    text-align: center;
+    padding: 0.1rem;
+
+}
+/*margin 1 rem es dar el equivalente al tamaño de 1 m*/
+/* padding es un relleno 'interno', hacia dentro. Para ver las disposiciones, entrar en el menu de programador del navegador */
+nav ul {
+    margin : 0;
+    padding: 0;
+    
+}
+nav li {
+    list-style: none;
+    margin: var(--margen);
+}
+main {
+    padding: var(--margen);
+}
+h1 {
+    margin: 0;
+    text-align:center; 
+    font-family: impact;   
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    border-bottom: 2px solid var(--color-tinta);
+    padding-bottom:1rem;
+    padding-top: 0.7rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+h3 {
+    padding: calc(0.5*var(--margen));
+    text-align: center;
+    
+}
+p:not(.pie) {
+    line-height: calc(1rem + var(--margen));
+    padding: 10px 0;
+    text-align: justify;
+    /* los márgenes se pueden definir por separado, siguiendo las agujas del reloj
+    si quito uno de ellos: pasa a hacer arriba, en medio, abajo
+    si quito dos: vertical, horizontal
+    si uso uno solo: todos */
+}
+
+/* Clase destacado que hemos inventado en el html: */
+destacado {
+    font-variant: small-caps;
+}
+ul {
+    padding: 0;
+}
+table {
+    width: 100%;
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+caption, thead, tfoot {
+    text-transform: uppercase;
+    background-color: var(--color-fondo-alternativo);
+    
+}
+caption, th, td {
+    border: 1px solid;
+    border-color: var(--color-fondo);
+    padding: var(--margen);
+
+}
+/* tr: table row, cada fila */
+tr th:first-of-type {
+    text-align: right;
+}
+tr th:not(:first-of-type) {
+    text-align: center;
+
+}
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: var(--color-fondo-alternativo2);
+}
+#Multimedia *:not(h3) {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+img, video {
+    display: block;
+    margin: auto;
+
+}
+figcaption {
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: smaller
+}
+hr {
+    height: 1.5px;
+    background-color: var(--color-tinta);
+    border-style: none;
+}
+footer {
+    background-color: black;
+    color: var(--color-enlace);
+    text-align: center;
+}
+.pie {
+    text-align: center;
+    margin: 1px;
+    padding: 5px;
+    font-size: small;
+
+}
+.enlaceIg {
+    text-decoration: underline;
+}
