@@ -29,6 +29,10 @@ nav, h1 {
     background-color: var(--color-tinta);
     text-align: center;
     padding: 0.1rem;
+    margin: 1rem 0;
+    border-radius: var(--margen);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 /*margin 1 rem es dar el equivalente al tamaño de 1 m*/
 /* padding es un relleno 'interno', hacia dentro. Para ver las disposiciones, entrar en el menu de programador del navegador */
@@ -45,8 +49,7 @@ main {
     padding: var(--margen);
 }
 h1 {
-    margin: 0
-    ;
+    margin: 0;
 }
 h2 {
     text-align: center;
@@ -59,6 +62,8 @@ h3 {
     background-color: var(--color-fondo-alternativo);
     padding: calc(0.5*var(--margen));
     text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 p {
     line-height: calc(1rem + var(--margen));
@@ -112,7 +117,7 @@ tr:nth-child(even) {
     background-color: var(--color-fondo-alternativo2);
 }
 #Multimedia *:not(h3) {
-    width: 100%;
-    margin: 0;
-
+    width: 80%;
+    margin: auto;
 }
+
