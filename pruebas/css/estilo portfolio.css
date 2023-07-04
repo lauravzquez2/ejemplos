@@ -32,6 +32,7 @@ nav {
     background-color: var(--color-tinta);
     text-align: center;
     padding: 0.1rem;
+    margin: 0;
 
 }
 /*margin 1 rem es dar el equivalente al tamaño de 1 m*/
@@ -49,7 +50,7 @@ main {
     padding: var(--margen);
 }
 h1 {
-    margin: 0;
+    margin: 20px 0;
     text-align:center; 
     font-family: impact;   
     font-weight: bold;
@@ -158,4 +159,12 @@ footer {
     width: 60%;
     padding-top: 20px;
 
+}
+nav {
+    display: flex;
+}
+.tiposDibujo {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: flex-end;
 }
