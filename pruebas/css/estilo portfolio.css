@@ -160,11 +160,3 @@ footer {
     padding-top: 20px;
 
 }
-nav {
-    display: flex;
-}
-.tiposDibujo {
-    display: flex;
-    flex-flow: row-wrap;
-    justify-content: flex-end;
-}
