@@ -6,7 +6,7 @@
 :root {
     --color-tinta: rgb(0, 0, 0);
     --color-fondo: rgb(255, 255, 255);
-    --color-fondo-alternativo:rgb(221, 210, 234);
+    --color-fondo-alternativo:rgb(221, 210, 234);     
     --color-fondo-alternativo2:rgb(231, 223, 240);
     --color-enlace: rgb(222, 222, 222);
     --margen:0.5rem;
@@ -14,6 +14,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: ;
 }
 
 body {
@@ -28,7 +29,8 @@ a {
     font-weight: 100;
     font-size: small;
 }
-.enlace {
+.redes-sociales {
+    margin-top:10px;
 }
 nav {
     color: white;
@@ -73,10 +75,10 @@ h3 {
     text-align: center;
     margin: 10px;
 }
-p:not(.pie1, .pie2) {
+p:not(.pie1, .pie2, .pie3) {
     line-height: auto;
     text-align: justify;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     /* los márgenes se pueden definir por separado, siguiendo las agujas del reloj
     si quito uno de ellos: pasa a hacer arriba, en medio, abajo
     si quito dos: vertical, horizontal
@@ -145,11 +147,13 @@ hr {
     background-color: black;
     color: var(--color-enlace);
     display:grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 10 10 10;
     justify-items: center;
     font-size: small;
+    padding-bottom:20px;
+
 .pie1, .pie2, .pie3 {
-    margin: 0;
+    padding: 20px;
 
 }
 }
@@ -184,10 +188,14 @@ hr {
     transform: rotate(90deg);
 }
 .subCabecera2 {
-    padding-top: 22px;
+    padding-top: 30px;
+
 }
 .subCabecera3 {
     transform: rotate(-90deg);
+}
+.subCabecera1, .subCabecera2, .subCabecera3 {
+    padding: 0
 }
 .cabecera {
 
