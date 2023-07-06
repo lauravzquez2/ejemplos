@@ -1,5 +1,8 @@
 /* <link rel="stylesheet" href="css/estilos.css"> necesario añadir este comando en el html para que funcione */
 /* con :root se crean variables válidas para todo el css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+
 :root {
     --color-tinta: rgb(0, 0, 0);
     --color-fondo: rgb(255, 255, 255);
@@ -15,7 +18,7 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Noto Serif Display';
     color: rgb(0, 0, 0);
     background-color: var(--color-fondo);
 }
@@ -50,28 +53,30 @@ main {
     padding: var(--margen);
 }
 h1 {
-    margin: 20px 0;
+    margin: 5px 0;
     text-align:center; 
-    font-family: impact;   
     font-weight: bold;
+    font-size: 25px;
 }
 h2 {
     text-align: center;
     border-bottom: 2px solid var(--color-tinta);
     padding-bottom:1rem;
     padding-top: 0.7rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 15px;
+
 }
 h3 {
-    padding: calc(0.5*var(--margen));
+    padding: calc(0.5*var(--margen));   
     text-align: center;
-    
+    margin: 10px;
 }
-p:not(.pie) {
-    line-height: calc(1rem + var(--margen));
-    padding: 10px 0;
+p:not(.pie1, .pie2) {
+    line-height: auto;
     text-align: justify;
+    padding-bottom: 10px;
     /* los márgenes se pueden definir por separado, siguiendo las agujas del reloj
     si quito uno de ellos: pasa a hacer arriba, en medio, abajo
     si quito dos: vertical, horizontal
@@ -116,14 +121,13 @@ caption {
 tr:nth-child(even) {
     background-color: var(--color-fondo-alternativo2);
 }
-#Multimedia *:not(h3) {
+#Multimedia *:not(h3, .imgRedonda) {
     width: 80%;
     max-width: 700px;
     margin: auto;
 }
 img, video {
-    display: block;
-    margin: auto;
+    display: flex;
 
 }
 figcaption {
@@ -137,26 +141,60 @@ hr {
     background-color: var(--color-tinta);
     border-style: none;
 }
-footer {
+.pie {
     background-color: black;
     color: var(--color-enlace);
-    text-align: center;
-}
-.pie {
-    text-align: center;
-    margin: 1px;
-    padding: 5px;
+    display:grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
     font-size: small;
+.pie1, .pie2, .pie3 {
+    margin: 0;
 
+}
 }
 .enlaceIg {
     text-decoration: underline;
+    padding: 10rem 0;
+    margin: 100px 0
 }
 .insta {
     display: inline-block;
 }
-.fotoYo {
-    width: 60%;
+.imgRedonda {
+    width: 200px;
+    max-width: 300px;
     padding-top: 20px;
+    border-radius: 50%;
+    align-items: center; 
+    margin: auto;
+}
+.tipos-arte, cabecera {
+    display: static;
+    justify-content: center;
 
 }
+.tipo {
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 255, 255, 10%);
+    border: 1px solid rgba(255, 255, 255, 20%);
+    margin: 5px 2px; 
+}
+.subCabecera1 {
+    transform: rotate(90deg);
+}
+.subCabecera2 {
+    padding: 50px 0
+}
+.subCabecera3 {
+    transform: rotate(-90deg);
+}
+.cabecera {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 0 50px;
+}
+
+
