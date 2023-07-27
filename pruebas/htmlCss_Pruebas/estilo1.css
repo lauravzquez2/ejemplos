@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
+ 
+
+* {
+  font-family: 'Noto Serif Display';
+  text-decoration: none;
+}
+#navbar, a {
+  background-color: darkslategray;
+  color: white;
+  
+}
+#navbar {
+  padding: 10px;
+}
+ul {
+  text-align: right;
+  list-style: none;
+}
+#cabecera_cabecera, #navbar {
+    width: 80%;
+    margin:auto;
+}
+#cabecera_navbar {
+  font-size: 20px;
+  text-align: right;
+  padding-top: 10px;
+}
+#cabecera_cabecera {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+
+}
+header {
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#cabecera_cabecera {
+  font-size: 25px;
+}
+#5 {
+  text-decoration: underline !important;
+}
+.dropdown-li {
+  position: relative;
+}
+
+.dropdown-li:hover .dropdown {
+  display: block;
+  opacity: 1;
+}
+.dropdown {
+  background-color: darkslategray;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  margin-right: 10px;
+  width: 100%;
+  padding: 20px;
+}
+.dropdown a {
+    padding-right: 20px;
+}
+

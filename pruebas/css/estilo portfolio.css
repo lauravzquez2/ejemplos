@@ -12,196 +12,22 @@
     --margen:0.5rem;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: ;
-}
-
-body {
-    margin: 0;
-    font-family: 'Noto Serif Display';
-    color: rgb(0, 0, 0);
-    background-color: var(--color-fondo);
-}
-a {
-    text-decoration: none;
-    color: var(--color-enlace);
-    font-weight: 100;
-    font-size: small;
-}
-.redes-sociales {
-    margin-top:10px;
-}
 nav {
-    color: white;
-    background-color: var(--color-tinta);
-    text-align: center;
-    padding: 0.1rem;
-    margin: 0;
-
-}
-/*margin 1 rem es dar el equivalente al tamaño de 1 m*/
-/* padding es un relleno 'interno', hacia dentro. Para ver las disposiciones, entrar en el menu de programador del navegador */
-nav ul {
-    margin : 0;
-    padding: 0;
-    
-}
-nav li {
-    list-style: none;
-    margin: var(--margen);
-}
-main {
-    padding: var(--margen);
-}
-h1 {
-    margin: 5px 0;
-    text-align:center; 
-    font-weight: bold;
-    font-size: 25px;
-}
-h2 {
-    text-align: center;
-    border-bottom: 2px solid var(--color-tinta);
-    padding-bottom:1rem;
-    padding-top: 0.7rem;
-    margin: 0px;
-    font-weight: bold;
-    font-size: 15px;
-
-}
-h3 {
-    padding: calc(0.5*var(--margen));   
-    text-align: center;
-    margin: 10px;
-}
-p:not(.pie1, .pie2, .pie3) {
-    line-height: auto;
-    text-align: justify;
-    padding-bottom: 20px;
-    /* los márgenes se pueden definir por separado, siguiendo las agujas del reloj
-    si quito uno de ellos: pasa a hacer arriba, en medio, abajo
-    si quito dos: vertical, horizontal
-    si uso uno solo: todos */
-}
-
-/* Clase destacado que hemos inventado en el html: */
-destacado {
-    font-variant: small-caps;
-}
-ul {
-    padding: 0;
-}
-table {
     width: 100%;
-    font-family: sans-serif;
-    border-collapse: collapse;
-}
-caption, thead, tfoot {
-    text-transform: uppercase;
-    background-color: var(--color-fondo-alternativo);
-    
-}
-caption, th, td {
-    border: 1px solid;
-    border-color: var(--color-fondo);
-    padding: var(--margen);
-
-}
-/* tr: table row, cada fila */
-tr th:first-of-type {
-    text-align: right;
-}
-tr th:not(:first-of-type) {
-    text-align: center;
-
-}
-caption {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-tr:nth-child(even) {
-    background-color: var(--color-fondo-alternativo2);
-}
-#Multimedia *:not(h3, .imgRedonda) {
-    width: 80%;
-    max-width: 700px;
-    margin: auto;
-}
-img, video {
-    display: flex;
-
-}
-figcaption {
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
-    text-align: center;
-    font-size: smaller
-}
-hr {
-    height: 1.5px;
+    float:right;
     background-color: var(--color-tinta);
-    border-style: none;
 }
-.pie {
-    background-color: black;
-    color: var(--color-enlace);
-    display:grid;
-    grid-template-rows: 10 10 10;
-    justify-items: center;
-    font-size: small;
-    padding-bottom:20px;
-
-.pie1, .pie2, .pie3 {
-    padding: 20px;
-
-}
-}
-.enlaceIg {
-    text-decoration: underline;
-    padding: 10rem 0;
-    margin: 100px 0
-}
-.insta {
-    display: inline-block;
-}
-.imgRedonda {
-    width: 200px;
-    max-width: 300px;
-    padding-top: 20px;
-    border-radius: 50%;
-    align-items: center; 
-    margin: auto;
-}
-.tipos-arte, cabecera {
-    display: static;
-    justify-content: center;
-
-}
-.tipo {
-    padding: 0.5rem 2rem;
-    background-color: rgba(255, 255, 255, 10%);
-    border: 1px solid rgba(255, 255, 255, 20%);
-    margin: 5px 2px; 
-}
-.subCabecera1 {
-    transform: rotate(90deg);
-}
-.subCabecera2 {
-    padding-top: 30px;
-
-}
-.subCabecera3 {
-    transform: rotate(-90deg);
-}
-.subCabecera1, .subCabecera2, .subCabecera3 {
-    padding: 0
-}
-.cabecera {
-
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
-}
-
-
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+    }
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;;
+        }
+            nav ul li a:hover {
+                background: var(--color-tinta);
+                    
+            }

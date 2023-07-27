@@ -1,0 +1,100 @@
+@media only screen and (max-width: 2000px) {
+
+* {
+  box-sizing: border-box;
+}
+    /* body {
+      font-family: arial;
+      text-decoration: none;
+      min-width: 660px;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0; */
+
+    
+    /* }
+    h1{
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    
+    #navbar ul {
+      flex-direction: row !important;
+      display: flex;
+      position: fixed;
+      top: -1rem;
+      right: 0;
+      width: 100%;
+      order: -1;
+      background-color: rgb(63, 151, 170);
+      list-style: none;
+      padding: 1rem 0;
+
+    }
+      #navbar a {
+
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem;
+       
+      }
+      #titulo {
+        position: fixed;
+        z-index: 1;
+        padding: 0.5rem;
+        color: white;
+        font-weight: bold;
+      }
+      
+    #navbar {
+      order: 0;
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  #navbar :not(#titulo) {
+    justify-content: flex-end;
+}
+  #titulo {
+    justify-content: flex-end !important;
+}
+
+    ul {
+      justify-content: end;
+      padding: 1rem;
+
+    }
+   
+    #secciones {
+      order: 1;
+    }
+
+    #marieTharp {
+      width: 100%;
+      padding-left: 0;
+    }
+  #tituloSeccionUno {
+    padding-top: 3rem;
+
+  }
+
+  h2 {
+    text-align: center;
+  } */
+
+img {
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+
+
+
+
+
+
+     }
