@@ -181,9 +181,11 @@ p {
   font-weight: 800;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
+  padding-left: 20px;
 }
 .respuesta {
   margin-top: 0;
+  padding-left: 10px;
 }
 textarea, input {
   margin-top: 10px;
