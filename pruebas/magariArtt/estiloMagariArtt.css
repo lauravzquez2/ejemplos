@@ -185,3 +185,12 @@ p {
 .respuesta {
   margin-top: 0;
 }
+textarea, input {
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+textarea {
+  margin-bottom: 30px;
+}
+
