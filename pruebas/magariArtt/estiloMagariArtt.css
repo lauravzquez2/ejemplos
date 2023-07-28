@@ -12,6 +12,7 @@ body {
     font-family: "Noto Sans Display";
     font-size:medium;
     background-color: white;
+    min-width: 500px;
 
 }
 .content {
@@ -59,13 +60,13 @@ hr {
 }
 .menu {
     position: fixed;
-    width: 100%;
+    width: 92%;
     display: flex;
     background-color: rgb(0,0,0,0.3);
     gap: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
-    padding-right: 1rem;
+    padding-right: 10rem;
     padding-left: 1rem;
     margin-top: 0;
     align-items: center;
