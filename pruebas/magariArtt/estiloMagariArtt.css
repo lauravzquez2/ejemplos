@@ -4,8 +4,8 @@ font-family: 'Noto Serif Display', serif;);
 
 * {
     box-sizing: flex-box;
-}
-body {
+  }
+  body {
     color: white;
     margin: 0;
     padding: 0;
@@ -13,7 +13,8 @@ body {
     font-size:medium;
     background-color: white;
     min-width: 500px;
-
+    width: 100%;
+    
 }
 .content {
   background-color: white;
