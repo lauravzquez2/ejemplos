@@ -62,7 +62,9 @@ nav ul li a:hover {
 #galeria a:hover {
     color: grey;
 }
-
+#inicio {
+    margin-bottom: 50px;
+}
 h2 {
     color: white;
     margin: 0;
@@ -77,6 +79,9 @@ h3 {
 
 p, h4 {
     margin: 20px;
+}
+h4 {
+    text-align: center;
 }
 #pregunta {
     font-weight: bold;
