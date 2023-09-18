@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1000;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border: 1px solid #555;
+    border-top: none;
+    width: 200px;
+}
+
+.submenu li {
+    width: 100%;
+    
+}
+
+.submenu li a:hover {
+    background-color: #777;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+/* ... (otros estilos) ... */
+
+.hamburger {
+    display: fixed;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Estilos cuando se reduce la pantalla */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu > li {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

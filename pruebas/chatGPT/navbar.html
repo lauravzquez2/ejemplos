@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Cabecera con Menú Desplegable</title>
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.hamburger').click(function() {
+            $('.menu').toggle();
+        });
+    });
+</script>
+    <header>
+        <button class="hamburger">&#9776;</button>
+        <nav>
+            <ul class="menu">
+
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Trabajo</a>
+                    <ul class="submenu">
+                        <li><a href="#">Ilustración científica</a></li>
+                        <li><a href="#">Ilustración artística</a></li>
+                        <li><a href="#">Cartelería</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
