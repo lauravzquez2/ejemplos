@@ -126,6 +126,7 @@ img.flotante {
     gap: 10px;
     max-width: 60%;
     margin: auto;
+    
 }
 
 .grid img {
@@ -138,8 +139,9 @@ img.flotante {
 }
 
 .grid:not(#cabecera) img:hover  {
-    transform: scale(1.5);
+    transform: scale(250%);
     z-index: 10;
+     
     
 }
 
