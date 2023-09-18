@@ -1,0 +1,195 @@
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: ../dibujos/Abeja.jpeg;
+}
+
+section, footer {
+    max-width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+}
+header {
+    max-width: 100%;
+    padding: 5px;
+    background-color: rgb(103, 136, 141);
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    
+
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(103, 136, 141);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav {
+    max-width: 100%;
+    padding: 5px;
+    background-color: rgb(103, 136, 141);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: rgb(103, 136, 141);
+}
+#galeria a {
+    color: black;
+    text-decoration: none;
+}
+#galeria a:hover {
+    color: grey;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(103, 136, 141);
+}
+h3 {
+    padding: 10px 40px;
+    text-align: center;
+}
+
+p, h4 {
+    margin: 20px;
+}
+#pregunta {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+#respuesta {
+    margin-top: 0;
+}
+#sobre-mi {
+
+}
+img.flotante {
+    float: left;
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+    width: 50%;
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 0 20px;
+}
+
+
+#cabecera {
+    max-width: 400px;
+}
+#titulo, #entradilla {
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+#titulo {
+    width: 55%;
+    margin: auto;
+    margin-left: 0;
+    /* filter: invert(1); */
+}
+
+#entradilla {
+    width: 80%;
+    border-radius: 50%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+    position: relative;
+
+}
+
+.grid:not(#cabecera) img:hover  {
+    transform: scale(1.5);
+    z-index: 10;
+    
+}
+
+
+/* #grid2 {
+    display: grid;
+    grid-template-columns: 0,5fr 1 fr;
+    align-items: center;
+    gap: 10px;
+    max-width: 60%;
+    margin: auto;
+} */
+#galeria {
+    margin: 20px 0;
+}
+
+#contacto {
+    text-align: center;
+}
+#contacto a {
+    color: black;
+}
+#contacto a:hover {
+    color: grey;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+    margin: 0;
+}
+
+@media (min-width: 1000px) {
+    .grid {
+        max-width: 600px;
+    }
+    p, h4 {
+        width: 60%;
+        margin: 20px auto;
+    }
+    #pregunta {
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    #respuesta {
+        margin-top: 0;
+    }
+}
